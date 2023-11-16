@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            class Marc extends HTMLElement{
+                connectedCallback(){
+                    this.innerHTML = "Marc was here"
+                }
+            }
+
+            customElements.define("x-marc", Marc);
+        </script>
+    </head>
+    <body>
+        <x-marc></x-marc>
+    </body>
+</html>
